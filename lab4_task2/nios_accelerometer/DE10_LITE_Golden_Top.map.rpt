@@ -1,0 +1,461 @@
+Analysis & Synthesis report for DE10_LITE_Golden_Top
+Thu Mar 06 16:42:41 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Thu Mar 06 16:42:41 2025           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; DE10_LITE_Golden_Top                        ;
+; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                  ;
++------------------------------------------------------------------+----------------------+----------------------+
+; Option                                                           ; Setting              ; Default Value        ;
++------------------------------------------------------------------+----------------------+----------------------+
+; Device                                                           ; 10M50DAF484C7G       ;                      ;
+; Top-level entity name                                            ; DE10_LITE_Golden_Top ; DE10_LITE_Golden_Top ;
+; Family name                                                      ; MAX 10               ; Cyclone V            ;
+; Use smart compilation                                            ; Off                  ; Off                  ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                   ; On                   ;
+; Enable compact report table                                      ; Off                  ; Off                  ;
+; Restructure Multiplexers                                         ; Auto                 ; Auto                 ;
+; Create Debugging Nodes for IP Cores                              ; Off                  ; Off                  ;
+; Preserve fewer node names                                        ; On                   ; On                   ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable               ; Enable               ;
+; Verilog Version                                                  ; Verilog_2001         ; Verilog_2001         ;
+; VHDL Version                                                     ; VHDL_1993            ; VHDL_1993            ;
+; State Machine Processing                                         ; Auto                 ; Auto                 ;
+; Safe State Machine                                               ; Off                  ; Off                  ;
+; Extract Verilog State Machines                                   ; On                   ; On                   ;
+; Extract VHDL State Machines                                      ; On                   ; On                   ;
+; Ignore Verilog initial constructs                                ; Off                  ; Off                  ;
+; Iteration limit for constant Verilog loops                       ; 5000                 ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                   ; 250                  ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                   ; On                   ;
+; Infer RAMs from Raw Logic                                        ; On                   ; On                   ;
+; Parallel Synthesis                                               ; On                   ; On                   ;
+; DSP Block Balancing                                              ; Auto                 ; Auto                 ;
+; NOT Gate Push-Back                                               ; On                   ; On                   ;
+; Power-Up Don't Care                                              ; On                   ; On                   ;
+; Remove Redundant Logic Cells                                     ; Off                  ; Off                  ;
+; Remove Duplicate Registers                                       ; On                   ; On                   ;
+; Ignore CARRY Buffers                                             ; Off                  ; Off                  ;
+; Ignore CASCADE Buffers                                           ; Off                  ; Off                  ;
+; Ignore GLOBAL Buffers                                            ; Off                  ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                  ; Off                  ;
+; Ignore LCELL Buffers                                             ; Off                  ; Off                  ;
+; Ignore SOFT Buffers                                              ; On                   ; On                   ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                  ; Off                  ;
+; Optimization Technique                                           ; Balanced             ; Balanced             ;
+; Carry Chain Length                                               ; 70                   ; 70                   ;
+; Auto Carry Chains                                                ; On                   ; On                   ;
+; Auto Open-Drain Pins                                             ; On                   ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                  ; Off                  ;
+; Auto ROM Replacement                                             ; On                   ; On                   ;
+; Auto RAM Replacement                                             ; On                   ; On                   ;
+; Auto DSP Block Replacement                                       ; On                   ; On                   ;
+; Auto Shift Register Replacement                                  ; Auto                 ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                 ; Auto                 ;
+; Auto Clock Enable Replacement                                    ; On                   ; On                   ;
+; Strict RAM Replacement                                           ; Off                  ; Off                  ;
+; Allow Synchronous Control Signals                                ; On                   ; On                   ;
+; Force Use of Synchronous Clear Signals                           ; Off                  ; Off                  ;
+; Auto RAM Block Balancing                                         ; On                   ; On                   ;
+; Auto RAM to Logic Cell Conversion                                ; Off                  ; Off                  ;
+; Auto Resource Sharing                                            ; Off                  ; Off                  ;
+; Allow Any RAM Size For Recognition                               ; Off                  ; Off                  ;
+; Allow Any ROM Size For Recognition                               ; Off                  ; Off                  ;
+; Allow Any Shift Register Size For Recognition                    ; Off                  ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing              ; On                   ; On                   ;
+; Ignore translate_off and synthesis_off directives                ; Off                  ; Off                  ;
+; Timing-Driven Synthesis                                          ; On                   ; On                   ;
+; Report Parameter Settings                                        ; On                   ; On                   ;
+; Report Source Assignments                                        ; On                   ; On                   ;
+; Report Connectivity Checks                                       ; On                   ; On                   ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                  ; Off                  ;
+; Synchronization Register Chain Length                            ; 2                    ; 2                    ;
+; Power Optimization During Synthesis                              ; Normal compilation   ; Normal compilation   ;
+; HDL message level                                                ; Level2               ; Level2               ;
+; Suppress Register Optimization Related Messages                  ; Off                  ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                 ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                 ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                  ; 100                  ;
+; Clock MUX Protection                                             ; On                   ; On                   ;
+; Auto Gated Clock Conversion                                      ; Off                  ; Off                  ;
+; Block Design Naming                                              ; Auto                 ; Auto                 ;
+; SDC constraint protection                                        ; Off                  ; Off                  ;
+; Synthesis Effort                                                 ; Auto                 ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                   ; On                   ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                  ; Off                  ;
+; Analysis & Synthesis Message Level                               ; Medium               ; Medium               ;
+; Disable Register Merging Across Hierarchies                      ; Auto                 ; Auto                 ;
+; Resource Aware Inference For Block RAM                           ; On                   ; On                   ;
++------------------------------------------------------------------+----------------------+----------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Mar 06 16:40:45 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE10_LITE_Golden_Top -c DE10_LITE_Golden_Top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12248): Elaborating Platform Designer system entity "nios_accelerometer.qsys"
+Info (12250): 2025.03.06.16:41:06 Progress: Loading nios_accelerometer/nios_accelerometer.qsys
+Info (12250): 2025.03.06.16:41:08 Progress: Reading input file
+Info (12250): 2025.03.06.16:41:08 Progress: Adding accelerometer_spi [altera_up_avalon_accelerometer_spi 18.0]
+Info (12250): 2025.03.06.16:41:10 Progress: Parameterizing module accelerometer_spi
+Info (12250): 2025.03.06.16:41:10 Progress: Adding button [altera_avalon_pio 18.1]
+Info (12250): 2025.03.06.16:41:10 Progress: Parameterizing module button
+Info (12250): 2025.03.06.16:41:10 Progress: Adding clk [clock_source 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module clk
+Info (12250): 2025.03.06.16:41:11 Progress: Adding cpu [altera_nios2_gen2 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module cpu
+Info (12250): 2025.03.06.16:41:11 Progress: Adding hex0 [altera_avalon_pio 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module hex0
+Info (12250): 2025.03.06.16:41:11 Progress: Adding hex1 [altera_avalon_pio 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module hex1
+Info (12250): 2025.03.06.16:41:11 Progress: Adding hex2 [altera_avalon_pio 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module hex2
+Info (12250): 2025.03.06.16:41:11 Progress: Adding hex3 [altera_avalon_pio 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module hex3
+Info (12250): 2025.03.06.16:41:11 Progress: Adding hex4 [altera_avalon_pio 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module hex4
+Info (12250): 2025.03.06.16:41:11 Progress: Adding hex5 [altera_avalon_pio 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module hex5
+Info (12250): 2025.03.06.16:41:11 Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module jtag_uart
+Info (12250): 2025.03.06.16:41:11 Progress: Adding led [altera_avalon_pio 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module led
+Info (12250): 2025.03.06.16:41:11 Progress: Adding onchip_memory [altera_avalon_onchip_memory2 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module onchip_memory
+Info (12250): 2025.03.06.16:41:11 Progress: Adding timer [altera_avalon_timer 18.1]
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing module timer
+Info (12250): 2025.03.06.16:41:11 Progress: Building connections
+Info (12250): 2025.03.06.16:41:11 Progress: Parameterizing connections
+Info (12250): 2025.03.06.16:41:11 Progress: Validating
+Info (12250): 2025.03.06.16:41:13 Progress: Done reading input file
+Info (12250): Nios_accelerometer.button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info (12250): Nios_accelerometer.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info (12250): Nios_accelerometer: Generating nios_accelerometer "nios_accelerometer" for QUARTUS_SYNTH
+Info (12250): Accelerometer_spi: Starting Generation of the Accelerometer Controller in SPI mode
+Info (12250): Accelerometer_spi: "nios_accelerometer" instantiated altera_up_avalon_accelerometer_spi "accelerometer_spi"
+Info (12250): Button: Starting RTL generation for module 'nios_accelerometer_button'
+Info (12250): Button:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_accelerometer_button --dir=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0003_button_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0003_button_gen//nios_accelerometer_button_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Button: Done RTL generation for module 'nios_accelerometer_button'
+Info (12250): Button: "nios_accelerometer" instantiated altera_avalon_pio "button"
+Info (12250): Cpu: "nios_accelerometer" instantiated altera_nios2_gen2 "cpu"
+Info (12250): Hex0: Starting RTL generation for module 'nios_accelerometer_hex0'
+Info (12250): Hex0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_accelerometer_hex0 --dir=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0004_hex0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0004_hex0_gen//nios_accelerometer_hex0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Hex0: Done RTL generation for module 'nios_accelerometer_hex0'
+Info (12250): Hex0: "nios_accelerometer" instantiated altera_avalon_pio "hex0"
+Info (12250): Jtag_uart: Starting RTL generation for module 'nios_accelerometer_jtag_uart'
+Info (12250): Jtag_uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_accelerometer_jtag_uart --dir=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0005_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0005_jtag_uart_gen//nios_accelerometer_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Jtag_uart: Done RTL generation for module 'nios_accelerometer_jtag_uart'
+Info (12250): Jtag_uart: "nios_accelerometer" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info (12250): Led: Starting RTL generation for module 'nios_accelerometer_led'
+Info (12250): Led:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_accelerometer_led --dir=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0006_led_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0006_led_gen//nios_accelerometer_led_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Led: Done RTL generation for module 'nios_accelerometer_led'
+Info (12250): Led: "nios_accelerometer" instantiated altera_avalon_pio "led"
+Info (12250): Onchip_memory: Starting RTL generation for module 'nios_accelerometer_onchip_memory'
+Info (12250): Onchip_memory:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_accelerometer_onchip_memory --dir=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0007_onchip_memory_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0007_onchip_memory_gen//nios_accelerometer_onchip_memory_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Onchip_memory: Done RTL generation for module 'nios_accelerometer_onchip_memory'
+Info (12250): Onchip_memory: "nios_accelerometer" instantiated altera_avalon_onchip_memory2 "onchip_memory"
+Info (12250): Timer: Starting RTL generation for module 'nios_accelerometer_timer'
+Info (12250): Timer:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios_accelerometer_timer --dir=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0008_timer_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0008_timer_gen//nios_accelerometer_timer_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Timer: Done RTL generation for module 'nios_accelerometer_timer'
+Info (12250): Timer: "nios_accelerometer" instantiated altera_avalon_timer "timer"
+Info (12250): Avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info (12250): Mm_interconnect_0: "nios_accelerometer" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info (12250): Irq_mapper: "nios_accelerometer" instantiated altera_irq_mapper "irq_mapper"
+Info (12250): Rst_controller: "nios_accelerometer" instantiated altera_reset_controller "rst_controller"
+Info (12250): Cpu: Starting RTL generation for module 'nios_accelerometer_cpu_cpu'
+Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=nios_accelerometer_cpu_cpu --dir=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0011_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/theod/AppData/Local/Temp/alt0153_45773142162761667.dir/0011_cpu_gen//nios_accelerometer_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info (12250): Cpu: # 2025.03.06 16:42:30 (*) Starting Nios II generation
+Info (12250): Cpu: # 2025.03.06 16:42:30 (*)   Checking for plaintext license.
+Info (12250): Cpu: # 2025.03.06 16:42:31 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info (12250): Cpu: # 2025.03.06 16:42:31 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Cpu: # 2025.03.06 16:42:31 (*)   LM_LICENSE_FILE environment variable is empty
+Info (12250): Cpu: # 2025.03.06 16:42:31 (*)   Plaintext license not found.
+Info (12250): Cpu: # 2025.03.06 16:42:31 (*)   No license required to generate encrypted Nios II/e.
+Info (12250): Cpu: # 2025.03.06 16:42:31 (*)   Elaborating CPU configuration settings
+Info (12250): Cpu: # 2025.03.06 16:42:31 (*)   Creating all objects for CPU
+Info (12250): Cpu: # 2025.03.06 16:42:32 (*)   Generating RTL from CPU objects
+Info (12250): Cpu: # 2025.03.06 16:42:32 (*)   Creating plain-text RTL
+Info (12250): Cpu: # 2025.03.06 16:42:33 (*) Done Nios II generation
+Info (12250): Cpu: Done RTL generation for module 'nios_accelerometer_cpu_cpu'
+Info (12250): Cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info (12250): Cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info (12250): Accelerometer_spi_avalon_accelerometer_spi_mode_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "accelerometer_spi_avalon_accelerometer_spi_mode_slave_translator"
+Info (12250): Cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info (12250): Accelerometer_spi_avalon_accelerometer_spi_mode_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "accelerometer_spi_avalon_accelerometer_spi_mode_slave_agent"
+Info (12250): Accelerometer_spi_avalon_accelerometer_spi_mode_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "accelerometer_spi_avalon_accelerometer_spi_mode_slave_agent_rsp_fifo"
+Info (12250): Router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info (12250): Router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info (12250): Router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info (12250): Router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info (12250): Router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info (12250): Accelerometer_spi_avalon_accelerometer_spi_mode_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "accelerometer_spi_avalon_accelerometer_spi_mode_slave_burst_adapter"
+Info (12250): Cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info (12250): Cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info (12250): Cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info (12250): Cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info (12250): Reusing file C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_arbitrator.sv
+Info (12250): Rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info (12250): Rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info (12250): Reusing file C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_arbitrator.sv
+Info (12250): Rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info (12250): Reusing file C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_arbitrator.sv
+Info (12250): Accelerometer_spi_avalon_accelerometer_spi_mode_slave_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "accelerometer_spi_avalon_accelerometer_spi_mode_slave_rsp_width_adapter"
+Info (12250): Reusing file C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_address_alignment.sv
+Info (12250): Reusing file C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_uncompressor.sv
+Info (12250): Avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info (12250): Avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info (12250): Error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info (12250): Error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info (12250): Nios_accelerometer: Done "nios_accelerometer" with 36 modules, 61 files
+Info (12249): Finished elaborating Platform Designer system entity "nios_accelerometer.qsys"
+Info (12021): Found 1 design units, including 1 entities, in source file de10_lite_golden_top.v
+    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/DE10_LITE_Golden_Top.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/nios_accelerometer.v
+    Info (12023): Found entity 1: nios_accelerometer File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/nios_accelerometer.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_avalon_sc_fifo.v
+    Info (12023): Found entity 1: altera_avalon_sc_fifo File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_avalon_sc_fifo.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_avalon_st_pipeline_base.v
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_avalon_st_pipeline_base.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_avalon_st_pipeline_stage.sv
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_stage File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_avalon_st_pipeline_stage.sv Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_default_burst_converter.sv
+    Info (12023): Found entity 1: altera_default_burst_converter File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_default_burst_converter.sv Line: 30
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_incr_burst_converter.sv
+    Info (12023): Found entity 1: altera_incr_burst_converter File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_incr_burst_converter.sv Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_address_alignment.sv
+    Info (12023): Found entity 1: altera_merlin_address_alignment File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_address_alignment.sv Line: 26
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_arbitrator.sv
+    Info (12023): Found entity 1: altera_merlin_arbitrator File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_arbitrator.sv Line: 103
+    Info (12023): Found entity 2: altera_merlin_arb_adder File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_arbitrator.sv Line: 228
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter.sv Line: 21
+Info (12021): Found 5 design units, including 5 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_13_1.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_13_1.sv Line: 40
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_13_1.sv Line: 55
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_13_1.sv Line: 77
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_13_1.sv Line: 98
+    Info (12023): Found entity 5: altera_merlin_burst_adapter_13_1 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_13_1.sv Line: 264
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_new.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_new File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_new.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_uncmpr.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_uncompressed_only File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_adapter_uncmpr.sv Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_burst_uncompressor.sv
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_burst_uncompressor.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_master_agent.sv
+    Info (12023): Found entity 1: altera_merlin_master_agent File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_master_agent.sv Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_master_translator.sv
+    Info (12023): Found entity 1: altera_merlin_master_translator File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_master_translator.sv Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_slave_agent.sv
+    Info (12023): Found entity 1: altera_merlin_slave_agent File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_slave_agent.sv Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_slave_translator.sv
+    Info (12023): Found entity 1: altera_merlin_slave_translator File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_slave_translator.sv Line: 35
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_merlin_width_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_width_adapter File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_merlin_width_adapter.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_reset_controller.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_reset_synchronizer.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_auto_init.v
+    Info (12023): Found entity 1: altera_up_accelerometer_spi_auto_init File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_auto_init.v Line: 29
+Warning (10238): Verilog Module Declaration warning at altera_up_accelerometer_spi_auto_init_ctrl.v(51): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "altera_up_accelerometer_spi_auto_init_ctrl" File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_auto_init_ctrl.v Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_auto_init_ctrl.v
+    Info (12023): Found entity 1: altera_up_accelerometer_spi_auto_init_ctrl File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_auto_init_ctrl.v Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_serial_bus_controller.v
+    Info (12023): Found entity 1: altera_up_accelerometer_spi_serial_bus_controller File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_serial_bus_controller.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_slow_clock_generator.v
+    Info (12023): Found entity 1: altera_up_accelerometer_spi_slow_clock_generator File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_up_accelerometer_spi_slow_clock_generator.v Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/altera_wrap_burst_converter.sv
+    Info (12023): Found entity 1: altera_wrap_burst_converter File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/altera_wrap_burst_converter.sv Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_accelerometer_spi.v
+    Info (12023): Found entity 1: nios_accelerometer_accelerometer_spi File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_accelerometer_spi.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_button.v
+    Info (12023): Found entity 1: nios_accelerometer_button File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_button.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu.v
+    Info (12023): Found entity 1: nios_accelerometer_cpu File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu.v Line: 9
+Info (12021): Found 21 design units, including 21 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v
+    Info (12023): Found entity 1: nios_accelerometer_cpu_cpu_register_bank_a_module File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 21
+    Info (12023): Found entity 2: nios_accelerometer_cpu_cpu_register_bank_b_module File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 87
+    Info (12023): Found entity 3: nios_accelerometer_cpu_cpu_nios2_oci_debug File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 153
+    Info (12023): Found entity 4: nios_accelerometer_cpu_cpu_nios2_oci_break File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 295
+    Info (12023): Found entity 5: nios_accelerometer_cpu_cpu_nios2_oci_xbrk File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 588
+    Info (12023): Found entity 6: nios_accelerometer_cpu_cpu_nios2_oci_dbrk File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 795
+    Info (12023): Found entity 7: nios_accelerometer_cpu_cpu_nios2_oci_itrace File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 982
+    Info (12023): Found entity 8: nios_accelerometer_cpu_cpu_nios2_oci_td_mode File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 1115
+    Info (12023): Found entity 9: nios_accelerometer_cpu_cpu_nios2_oci_dtrace File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 1183
+    Info (12023): Found entity 10: nios_accelerometer_cpu_cpu_nios2_oci_compute_input_tm_cnt File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 1265
+    Info (12023): Found entity 11: nios_accelerometer_cpu_cpu_nios2_oci_fifo_wrptr_inc File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 1337
+    Info (12023): Found entity 12: nios_accelerometer_cpu_cpu_nios2_oci_fifo_cnt_inc File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 1380
+    Info (12023): Found entity 13: nios_accelerometer_cpu_cpu_nios2_oci_fifo File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 1427
+    Info (12023): Found entity 14: nios_accelerometer_cpu_cpu_nios2_oci_pib File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 1913
+    Info (12023): Found entity 15: nios_accelerometer_cpu_cpu_nios2_oci_im File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 1936
+    Info (12023): Found entity 16: nios_accelerometer_cpu_cpu_nios2_performance_monitors File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 2006
+    Info (12023): Found entity 17: nios_accelerometer_cpu_cpu_nios2_avalon_reg File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 2023
+    Info (12023): Found entity 18: nios_accelerometer_cpu_cpu_ociram_sp_ram_module File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 2116
+    Info (12023): Found entity 19: nios_accelerometer_cpu_cpu_nios2_ocimem File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 2181
+    Info (12023): Found entity 20: nios_accelerometer_cpu_cpu_nios2_oci File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 2362
+    Info (12023): Found entity 21: nios_accelerometer_cpu_cpu File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu.v Line: 2834
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu_debug_slave_sysclk.v
+    Info (12023): Found entity 1: nios_accelerometer_cpu_cpu_debug_slave_sysclk File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu_debug_slave_sysclk.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu_debug_slave_tck.v
+    Info (12023): Found entity 1: nios_accelerometer_cpu_cpu_debug_slave_tck File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu_debug_slave_tck.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu_debug_slave_wrapper.v
+    Info (12023): Found entity 1: nios_accelerometer_cpu_cpu_debug_slave_wrapper File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu_debug_slave_wrapper.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu_test_bench.v
+    Info (12023): Found entity 1: nios_accelerometer_cpu_cpu_test_bench File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_cpu_cpu_test_bench.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_hex0.v
+    Info (12023): Found entity 1: nios_accelerometer_hex0 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_hex0.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_irq_mapper.sv
+    Info (12023): Found entity 1: nios_accelerometer_irq_mapper File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_irq_mapper.sv Line: 31
+Info (12021): Found 5 design units, including 5 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_jtag_uart.v
+    Info (12023): Found entity 1: nios_accelerometer_jtag_uart_sim_scfifo_w File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_jtag_uart.v Line: 21
+    Info (12023): Found entity 2: nios_accelerometer_jtag_uart_scfifo_w File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_jtag_uart.v Line: 78
+    Info (12023): Found entity 3: nios_accelerometer_jtag_uart_sim_scfifo_r File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_jtag_uart.v Line: 164
+    Info (12023): Found entity 4: nios_accelerometer_jtag_uart_scfifo_r File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_jtag_uart.v Line: 243
+    Info (12023): Found entity 5: nios_accelerometer_jtag_uart File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_jtag_uart.v Line: 331
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_led.v
+    Info (12023): Found entity 1: nios_accelerometer_led File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_led.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0.v
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_avalon_st_adapter.v
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_avalon_st_adapter File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_avalon_st_adapter.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_avalon_st_adapter_001.v
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_avalon_st_adapter_001 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_avalon_st_adapter_001.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0.sv Line: 66
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_avalon_st_adapter_error_adapter_0 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv Line: 66
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_cmd_demux.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_cmd_demux File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_cmd_demux.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_cmd_demux_001.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_cmd_demux_001 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_cmd_demux_001.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_cmd_mux.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_cmd_mux File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_cmd_mux.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_cmd_mux_002.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_cmd_mux_002 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_cmd_mux_002.sv Line: 51
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_router_default_decode File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router.sv Line: 45
+    Info (12023): Found entity 2: nios_accelerometer_mm_interconnect_0_router File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_001.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_router_001_default_decode File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_001.sv Line: 45
+    Info (12023): Found entity 2: nios_accelerometer_mm_interconnect_0_router_001 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_001.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_002.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_router_002_default_decode File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_002.sv Line: 45
+    Info (12023): Found entity 2: nios_accelerometer_mm_interconnect_0_router_002 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_002.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_003.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_router_003_default_decode File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_003.sv Line: 45
+    Info (12023): Found entity 2: nios_accelerometer_mm_interconnect_0_router_003 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_003.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_004.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_router_004_default_decode File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_004.sv Line: 45
+    Info (12023): Found entity 2: nios_accelerometer_mm_interconnect_0_router_004 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_router_004.sv Line: 84
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_rsp_demux.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_rsp_demux File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_rsp_demux.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_rsp_mux.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_rsp_mux File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_rsp_mux.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_rsp_mux_001.sv
+    Info (12023): Found entity 1: nios_accelerometer_mm_interconnect_0_rsp_mux_001 File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_mm_interconnect_0_rsp_mux_001.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_onchip_memory.v
+    Info (12023): Found entity 1: nios_accelerometer_onchip_memory File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_onchip_memory.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_accelerometer/submodules/nios_accelerometer_timer.v
+    Info (12023): Found entity 1: nios_accelerometer_timer File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/db/ip/nios_accelerometer/submodules/nios_accelerometer_timer.v Line: 21
+Error (10161): Verilog HDL error at DE10_LITE_Golden_Top.v(86): object "keyMod" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/DE10_LITE_Golden_Top.v Line: 86
+Info (144001): Generated suppressed messages file C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/DE10_LITE_Golden_Top.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
+    Error: Peak virtual memory: 4719 megabytes
+    Error: Processing ended: Thu Mar 06 16:42:42 2025
+    Error: Elapsed time: 00:01:57
+    Error: Total CPU time (on all processors): 00:01:57
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/InformationProcessingLabs/lab4_task2/nios_accelerometer/DE10_LITE_Golden_Top.map.smsg.
+
+

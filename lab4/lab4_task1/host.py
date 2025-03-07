@@ -26,7 +26,7 @@ def send_on_jtag(cmd):
     return vals
 
 def perform_computation():
-    res = send_on_jtag("testing")
+    res = send_on_jtag("testingHello123")
     # you can process the output here
     print(res)
 
