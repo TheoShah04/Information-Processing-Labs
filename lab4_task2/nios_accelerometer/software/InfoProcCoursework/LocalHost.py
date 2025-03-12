@@ -1,4 +1,5 @@
 import socket
+import time
 
 HOST = '127.0.0.1'  # Localhost
 PORT = 12345        # Port to listen on
@@ -13,10 +14,21 @@ print(f"Server listening on {HOST}:{PORT}...")
 conn, addr = server_socket.accept()  # Accept an incoming connection
 print(f"Connected by {addr}")
 
-# Keep receiving and printing data
+counter = 0  # Initialize counter
+
+# Keep sending and receiving data
 try:
     while True:
-        data = conn.recv(15)  # Receive up to 15 bytes of data. 7 integers and 1 newline character.
+        # Send incrementing data to the client
+        message = f"Data: {counter}\n"
+        conn.sendall(message.encode())  
+        print(f"Sent: {message.strip()}")  # Print the sent message
+        
+        counter += 1  # Increment counter
+        time.sleep(1)  # Wait for a second before sending the next message
+
+        # Receive and print incoming data
+        data = conn.recv(15)  # Receive up to 15 bytes of data
         if not data:
             break  # Stop if no data is received (client disconnected)
         
